@@ -151,9 +151,9 @@ function ReadUserInput(parentscreen, question, number, password, x, y, x2, y2)
       elseif (ev[2]==keys.right) then
         cursorpos=math.min(txtlen+1,cursorpos+1)
 
-      elseif (ev[2]==28) then -- 28 ENTER key
+      elseif (ev[2]==28 or ev[2]==257) then -- 28 ENTER key
         break; -- return text
-      elseif (ev[2]==14 and cursorpos>1) then --backspace
+      elseif ((ev[2]==14 or ev[2]==259) and cursorpos>1) then --backspace
 
         tmp=string.sub(text,1,cursorpos-2)
 
