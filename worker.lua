@@ -1,6 +1,6 @@
 -- Author: Xoandbit
 --
-os.loadAPI("lain")
+os.loadAPI("lain.lua")
 lain.initRobot()
 robot = lain.robot
 
